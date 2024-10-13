@@ -1,0 +1,180 @@
+/* General App Styles */
+.app {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e6f7ff; /* Light blue background for a calming effect */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Heading Styles */
+.heading-2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Tab List Styles */
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.tab-item:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-favicon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.tab-item:hover {
+  background-color: #e0e0e0;
+}
+
+.favorite {
+  background-color: #ffefd5;
+}
+
+.tab-title {
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.favorite-button,
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 8px;
+  transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+  color: #ffd700;
+}
+
+.close-button:hover {
+  color: #ff4c4c;
+}
+
+/* Tooltip content styles */
+.tooltip-content {
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.tooltip-content p {
+  margin: 4px 0;
+}
+/* Favorite Button Styles */
+.favorite-button {
+  background: none;
+  border: none;
+  color: #ffd700; /* Gold star color */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.favorite-button:hover {
+  color: #daa520; /* Darker gold when hovered */
+}
+
+/* Close Button Styles */
+.close-button {
+  background: none;
+  border: none;
+  color: #ff5f5f;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-button:disabled {
+  color: #ccc; /* Gray color when the button is disabled */
+  cursor: not-allowed;
+}
+
+.close-button:hover:not(:disabled) {
+  color: #e04444;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.fetch-tabs-button {
+  background-color: #28a745;
+}
+
+.fetch-tabs-button:hover {
+  background-color: #218838;
+}
+
+.close-all-tabs-button {
+  background-color: #dc3545;
+}
+
+.close-all-tabs-button:hover {
+  background-color: #c82333;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto; /* Centers the logo */
+  width: 320px; /* Set the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Pointer cursor to indicate it's interactive */
+}
+
+/* Loader Styles */
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
